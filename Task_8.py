@@ -1,11 +1,15 @@
 desired_number = int(input("Загадайте число от 1 до 100: "))
-x = int(input("Ваше число: "))
-count = 1
-while x != desired_number:
-    if x > desired_number:
-        x = int(x - x/2)
-    elif x < desired_number:
-        x = int(x / 2)
+z = 0
+count = 0
+x = 1
+y = 100
+while z != desired_number:
+    z = int(input("Ваше число: "))
+    if z > desired_number:
+        y = int((x+y)/2)
+        print("Ваше число больше")
+    elif z < desired_number:
+        x = int((x + y) / 2)
+        print("Ваше число меньше")
     count += 1
-print(count)
-print("Вы угадали!!!", x)
+print("Вы угадали!!!",z)
