@@ -1,13 +1,11 @@
-positive_comment = 0
-negative_comment = 0
-while True:
-    comment = int(input("Введите число: "))
-    if comment == 0:
-        break
-    elif comment < 0:
-        negative_comment += 1
-    else:
-        positive_comment += 1
-
-print("Положительных комментариев:", positive_comment)
-print("Отрицательный комментариев:", negative_comment)
+a = int(input('Введите певое число: '))
+b = int(input('Введите последнее число: '))
+c = int(input('Введите делитель: '))
+summ = 0
+count = 0
+for number in range(a, b):
+    if number % c ==0:
+        summ += number
+        count += 1
+print('среднее арифметическое всех чисел из '
+      'отрезка [a; b], кратных числу c равно ', summ / count)

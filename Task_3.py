@@ -1,8 +1,7 @@
-number = int(input("Введите число: "))
-count_number = 0
-sum_number = 0
-while number != 0:
-    count_number = number // 10
-    number = count_number
-    sum_number += 1
-print(sum_number)
+reverse_timer = int(input('Введите время готовности: '))
+for time in range(reverse_timer, 0, -1):
+    print(time)
+    eat = int(input('Готовы забрать еду(1 - да; 2 - нет):' ))
+    if eat == 1:
+        break
+print('Ваша еда готова, осторожно горячo.')
