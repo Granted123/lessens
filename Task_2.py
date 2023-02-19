@@ -1,12 +1,7 @@
-name = input("Введите имя должника: ")
-duty = int(input("Введите задолжность должника: "))
-print(name,", ваша задолжность составляет:",duty)
-while True:
-    debt_repayment = int(input("Сколько рублей вы внесёте прямо сейчас, чтобы её погасить? "))
-    if debt_repayment >= duty:
-        print("Отлично,", name, "! Вы погасили долг. Спасибо!")
-        break
-    else:
-        print("Маловато,", name,". Давайте ещё раз.")
-
-        # Не знаю как сделать так, чтобы точки и запятые были сразу после переменных.
+number_of_debtors = int(input('Введите кол-во дожников: '))
+count_duty = 0
+for debtor in range(0, number_of_debtors, 5):
+    print('Должник с номером ', debtor)
+    duty = int(input('Сколько вы должны? '))
+    count_duty += duty
+print('Общая сумма долга:', count_duty)

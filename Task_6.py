@@ -1,12 +1,13 @@
-x = int(input("Сколько денег в банке? "))
-y = int(input("Какую сумму вы хотите получить? "))
-P = int(input("Под сколько процентов вклад? "))
-count_x = 0
-year = 0
-z = 0
-while count_x < y:
-    z = x * (P / 100)
-    x += int(z)
-    count_x = x
-    year += 1
-print(year)
+educational_grant = int(input('Введите стипендию: '))
+expenses = int(input('Введите расходы на проживание: '))
+count = 0
+one_month = expenses - educational_grant
+print('1.месяц траты', expenses, 'не хватает', one_month)
+for month in range(2, 11):
+        inflation = expenses * 1.03
+        duty = inflation - educational_grant
+        count += duty + one_month
+        print(month,'.месяц траты', expenses, 'не хватает', count)
+        expenses = inflation
+        one_month = 0
+print('Нужно попросить у родителей', count, 'рублей')

@@ -1,7 +1,5 @@
-amount_of_numbers = int(input("До какого числа возводить в степень? "))
-count_number = 1
-while count_number <= amount_of_numbers:
- cube_number = count_number ** 3
- print(count_number,"в третьей степени =", cube_number)
- count_number +=1
-
+all_buckwheat = 100
+for time in range(1, 25):
+    eat = int(input('Сколько раз за месяц вы питались? '))
+    all_buckwheat -= 4 * eat
+    print('К концу', time, 'месяца', 'осталось гречки:', all_buckwheat, 'кг')
