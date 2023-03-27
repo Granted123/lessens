@@ -1,2 +1,3 @@
-x = int(input('Введите кол-во мальчиков: '))
-y = int(input('Введите кол-во девочек: '))
+boys = int(input('Введите кол-во мальчиков: '))
+girls = int(input('Введите кол-во девочек: '))
+if (boys > 2 * girls) or (girls)
